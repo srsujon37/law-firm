@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Legal Solution</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
      <link rel="shortcut icon" href="./images/business.png" type="image/x-icon">
     <!-- tailwindcss link-->
@@ -15,6 +17,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color-primary': '#B68C5A',
               }
             }
           }
@@ -39,6 +42,85 @@
       </style>
 </head>
 <body>
+  <!-- header section design -->
+    <header class="container mx-auto">
+      <!-- navbar -->
+       <nav>
+        <div class="navbar ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="  lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="rounded-lg text-xl"><img class="mx-auto" src="./images/logo2.png" alt=""></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu   menu-horizontal px-1">
+              <li><a cla>Home</a></li>
+              <li><a>Services <i class="fa-solid fa-chevron-right text-[rgb(112, 112, 112);]"></i></a></li>
+              <li><a>Cases <i class="fa-solid fa-chevron-right text-[rgb(112, 112, 112);]"></i></a></li>
+              <li><a>Blog <i class="fa-solid fa-chevron-right text-[rgb(112, 112, 112);]"></i></a></li>
+              <li><a>Contact Us <i class="fa-solid fa-chevron-right text-[rgb(112, 112, 112);]"></i></a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#B68C5A] text-white poppins">Free Consultation</a>
+          </div>
+        </div>
+       </nav>
+    </header>
+    <!-- main section -->
+    <main class="container mx-auto">
+       <!-- hero section design -->
+       <section class="">
+        <div
+        class="hero h-[550px] rounded-lg bg-cover bg-center"
+        style="background-image: url(./images/banner.png);">
+        <div class=" bg-gradient-to-r from-black/0 to-black/10"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="w-[668px]">
+            <h1 class="mb-5 text-5xl font-extrabold text-7xl eb-garamond">We Provide Effective <br>Legal Solutions</h1>
+            <p class="mb-5 poppins">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+            <div class="join gap-2">
+              <input class="input input-bordered join-item" placeholder="Search your services " />
+              <button class="btn border-none text-white poppins bg-[#B68C5A] rounded-lg">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       </section>
+    </main>
+
+    <footer>
+        
+    </footer>
     
 </body>
 </html>
